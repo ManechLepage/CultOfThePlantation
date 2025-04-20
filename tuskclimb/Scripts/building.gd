@@ -14,6 +14,10 @@ extends Resource
 @export var food_cost: int
 @export var food_production: int
 
+@export var culture_production: int
+
+@export var knowledge_production: int
+
 var position: Vector2i
 var sprite: Vector2i
 
