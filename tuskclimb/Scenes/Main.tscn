@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=4 uid="uid://dgpkwmwc6l7we"]
+[gd_scene load_steps=5 format=4 uid="uid://dgpkwmwc6l7we"]
 
 [ext_resource type="TileSet" uid="uid://14ecier21pmm" path="res://Graphics/Main.tres" id="1_r150o"]
 [ext_resource type="Script" uid="uid://dw8veyr8otmhn" path="res://Scripts/camera_2d.gd" id="2_idj7w"]
+[ext_resource type="Theme" uid="uid://b0l1rqibye7jd" path="res://Graphics/MainTheme.tres" id="3_kln2b"]
+[ext_resource type="PackedScene" uid="uid://bayog4bj46dj1" path="res://Scenes/building.tscn" id="4_rgh2o"]
 
 [node name="Main" type="Node2D"]
 texture_filter = 1
@@ -16,8 +18,49 @@ tile_set = ExtResource("1_r150o")
 
 [node name="Structures" type="TileMapLayer" parent="GridMap"]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAD+//z/AAADAAAAAAD+//3/AAADAAAAAAD+//7/AAADAAAAAAD+////AAADAAAAAAD//wAAAAADAAAAAAD/////AAADAAAAAAD+/wAAAAADAAAAAAD9////AAADAAAAAAD9//3/AAADAAAAAAD9//7/AAADAAAAAAD///7/AAADAAAAAAD+/wEAAAADAAAAAAD9/wAAAAADAAAAAAD9/wEAAAADAAAAAAAAAAYAAAACAAMAAAD//wgAAAACAAEAAAABAAgAAAACAAAAAAD//wcAAAACAAIAAAAAAAcAAAACAAEAAAAAAAgAAAACAAMAAAA=")
+tile_map_data = PackedByteArray("AAD+//z/AAADAAAAAAD+//3/AAADAAAAAAD+//7/AAADAAAAAAD+////AAADAAAAAAD//wAAAAADAAAAAAD/////AAADAAAAAAD+/wAAAAADAAAAAAD9////AAADAAAAAAD9//3/AAADAAAAAAD9//7/AAADAAAAAAD///7/AAADAAAAAAD+/wEAAAADAAAAAAD9/wAAAAADAAAAAAD9/wEAAAADAAAAAAA=")
 tile_set = ExtResource("1_r150o")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("2_idj7w")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Screen" type="Control" parent="CanvasLayer"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_kln2b")
+
+[node name="Buildings" type="Panel" parent="CanvasLayer/Screen"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -114.0
+offset_right = -25.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Screen/Buildings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Building" parent="CanvasLayer/Screen/Buildings/HBoxContainer" instance=ExtResource("4_rgh2o")]
+layout_mode = 2
