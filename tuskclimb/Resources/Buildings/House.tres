@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Building" load_steps=2 format=3 uid="uid://npheydiasc4w"]
+
+[ext_resource type="Script" uid="uid://hnuewcfy260r" path="res://Scripts/building.gd" id="1_1olsa"]
+
+[resource]
+script = ExtResource("1_1olsa")
+name = "House"
+metadata/_custom_type_script = "uid://hnuewcfy260r"
