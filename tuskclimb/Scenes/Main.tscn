@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 [gd_scene load_steps=8 format=4 uid="uid://dgpkwmwc6l7we"]
 [gd_scene load_steps=13 format=4 uid="uid://druwtnkwi32cx"]
 [ext_resource type="TileSet" uid="uid://14ecier21pmm" path="res://Graphics/Main.tres" id="1_r150o"]
@@ -28,15 +27,6 @@ texture = ExtResource("4_v1gob")
 [sub_resource type="Theme" id="Theme_grg3l"]
 ProgressBar/styles/background = SubResource("StyleBoxTexture_bmxlf")
 ProgressBar/styles/fill = SubResource("StyleBoxTexture_4kpch")
-=======
-[gd_scene load_steps=6 format=4 uid="uid://dgpkwmwc6l7we"]
-
-[ext_resource type="TileSet" uid="uid://14ecier21pmm" path="res://Graphics/Main.tres" id="1_r150o"]
-[ext_resource type="Script" uid="uid://dw8veyr8otmhn" path="res://Scripts/camera_2d.gd" id="2_idj7w"]
-[ext_resource type="Theme" uid="uid://b0l1rqibye7jd" path="res://Graphics/MainTheme.tres" id="3_kln2b"]
-[ext_resource type="Script" uid="uid://e8hxx7fv74pu" path="res://Scripts/building_ui.gd" id="4_pbw6q"]
-[ext_resource type="PackedScene" uid="uid://bayog4bj46dj1" path="res://Scenes/building.tscn" id="4_rgh2o"]
->>>>>>> parent of 094f8cb (if i was you flint and steel)
 =======
 [gd_scene load_steps=6 format=4 uid="uid://dgpkwmwc6l7we"]
 
