@@ -81,7 +81,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Button" type="Button" parent="CanvasLayer/Screen"]
+[node name="NextTurnButton" type="Button" parent="CanvasLayer/Screen"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -92,3 +92,5 @@ offset_right = -9.0
 offset_bottom = 64.0
 grow_horizontal = 0
 text = "Next turn"
+
+[connection signal="pressed" from="CanvasLayer/Screen/NextTurnButton" to="." method="_on_next_turn_button_pressed"]
