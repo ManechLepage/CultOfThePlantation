@@ -60,6 +60,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		handle_placing()
 
 func adjust_pos(pos: Vector2i) -> Vector2i:
-	if pos % 2 == 0:
-		pass
-	return pos + Vector2i(0, 0)
+	if pos.x % 2 == 0:
+		return pos - Vector2i(0, 0)
+	return pos - Vector2i(0, 0)

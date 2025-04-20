@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://b234htdwclqp1"]
+
+[ext_resource type="Script" uid="uid://hnuewcfy260r" path="res://Scripts/building.gd" id="1_sgjvl"]
+[ext_resource type="Texture2D" uid="uid://da84wow34g83t" path="res://Graphics/Building/forest.aseprite" id="2_3rhi8"]
+
+[resource]
+script = ExtResource("1_sgjvl")
+texture = ExtResource("2_3rhi8")
+name = "Forest"
+sprites = Array[Vector2i]([Vector2i(1, 0)])
+metadata/_custom_type_script = "uid://hnuewcfy260r"
