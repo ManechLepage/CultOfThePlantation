@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=4 uid="uid://dgpkwmwc6l7we"]
+[gd_scene load_steps=9 format=4 uid="uid://dgpkwmwc6l7we"]
 
+[ext_resource type="Script" uid="uid://b52awvgctu737" path="res://Scripts/grid_map.gd" id="1_50glp"]
 [ext_resource type="TileSet" uid="uid://14ecier21pmm" path="res://Graphics/Main.tres" id="1_r150o"]
 [ext_resource type="Script" uid="uid://dw8veyr8otmhn" path="res://Scripts/camera_2d.gd" id="2_idj7w"]
 [ext_resource type="Theme" uid="uid://b0l1rqibye7jd" path="res://Graphics/MainTheme.tres" id="3_kln2b"]
@@ -12,6 +13,7 @@
 texture_filter = 1
 
 [node name="GridMap" type="Node2D" parent="."]
+script = ExtResource("1_50glp")
 
 [node name="Ground" type="TileMapLayer" parent="GridMap"]
 y_sort_enabled = true
