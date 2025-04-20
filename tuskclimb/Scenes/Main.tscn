@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [gd_scene load_steps=8 format=4 uid="uid://dgpkwmwc6l7we"]
 [gd_scene load_steps=13 format=4 uid="uid://druwtnkwi32cx"]
 [ext_resource type="TileSet" uid="uid://14ecier21pmm" path="res://Graphics/Main.tres" id="1_r150o"]
@@ -26,15 +25,6 @@ texture = ExtResource("4_v1gob")
 [sub_resource type="Theme" id="Theme_grg3l"]
 ProgressBar/styles/background = SubResource("StyleBoxTexture_bmxlf")
 ProgressBar/styles/fill = SubResource("StyleBoxTexture_4kpch")
-=======
-[gd_scene load_steps=6 format=4 uid="uid://dgpkwmwc6l7we"]
-
-[ext_resource type="TileSet" uid="uid://14ecier21pmm" path="res://Graphics/Main.tres" id="1_r150o"]
-[ext_resource type="Script" uid="uid://dw8veyr8otmhn" path="res://Scripts/camera_2d.gd" id="2_idj7w"]
-[ext_resource type="Theme" uid="uid://b0l1rqibye7jd" path="res://Graphics/MainTheme.tres" id="3_kln2b"]
-[ext_resource type="Script" uid="uid://e8hxx7fv74pu" path="res://Scripts/building_ui.gd" id="4_pbw6q"]
-[ext_resource type="PackedScene" uid="uid://bayog4bj46dj1" path="res://Scenes/building.tscn" id="4_rgh2o"]
->>>>>>> parent of 094f8cb (if i was you flint and steel)
 
 [node name="Main" type="Node2D"]
 texture_filter = 1
@@ -63,6 +53,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -5.0
+offset_right = 1.0
+offset_bottom = -5.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_kln2b")
@@ -98,3 +92,32 @@ alignment = 1
 
 [node name="Building" parent="CanvasLayer/Screen/Buildings/HBoxContainer" instance=ExtResource("4_rgh2o")]
 layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Screen"]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 133.0
+offset_right = 780.0
+offset_bottom = 156.0
+theme = SubResource("Theme_grg3l")
+value = 100.0
+show_percentage = false
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Screen/ProgressBar"]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 28.0
+offset_bottom = 28.0
+texture = ExtResource("5_jw32o")
+
+[node name="Label" type="Label" parent="CanvasLayer/Screen/ProgressBar"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = -4.0
+offset_right = 77.0
+offset_bottom = 22.0
+theme = ExtResource("3_kln2b")
+theme_override_fonts/font = ExtResource("9_vy5pj")
+theme_override_font_sizes/font_size = 32
+text = "69"
