@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://cskjlgwkutoaj"]
+
+[ext_resource type="Script" uid="uid://hnuewcfy260r" path="res://Scripts/building.gd" id="1_hsjec"]
+[ext_resource type="Texture2D" uid="uid://cnt76rnvkh1oo" path="res://Graphics/Building/grass.aseprite" id="2_cwp6w"]
+
+[resource]
+script = ExtResource("1_hsjec")
+texture = ExtResource("2_cwp6w")
+name = "Grass"
+sprites = Array[Vector2i]([Vector2i(0, 0)])
+metadata/_custom_type_script = "uid://hnuewcfy260r"
