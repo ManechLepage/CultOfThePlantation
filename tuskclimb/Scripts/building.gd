@@ -5,6 +5,15 @@ extends Resource
 @export var name: String
 @export var sprites: Array[Vector2i]
 
+@export var only_grass: bool
+
+@export_category("Resources")
+@export var energy_cost: int
+@export var energy_production: int
+
+@export var food_cost: int
+@export var food_production: int
+
 var position: Vector2i
 var sprite: Vector2i
 

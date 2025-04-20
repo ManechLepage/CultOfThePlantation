@@ -47,6 +47,9 @@ func place_building(placed_building: Building, pos: Vector2i) -> void:
 		if building.position == pos:
 			return
 	
+	if hovered.only_grass and ground.get_cell_atlas_coords(pos) != grass_tile.get_sprite():
+		return
+	
 	hovered = null
 	
 	var building: Building = placed_building.duplicate(true)

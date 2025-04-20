@@ -8,4 +8,5 @@ script = ExtResource("1_sgjvl")
 texture = ExtResource("2_3rhi8")
 name = "Forest"
 sprites = Array[Vector2i]([Vector2i(1, 0)])
+only_grass = true
 metadata/_custom_type_script = "uid://hnuewcfy260r"
