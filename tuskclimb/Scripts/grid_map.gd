@@ -13,7 +13,7 @@ var hovered: Building
 
 func update_grid() -> void:
 	for cell in structures.get_used_cells():
-		if structures.get_cell_atlas_coords(cell) != Vector2i(1, 0):
+		if structures.get_cell_atlas_coords(cell).x <= 2:
 			structures.erase_cell(cell)
 	
 	for building in buildings:
