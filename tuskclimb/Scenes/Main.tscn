@@ -26,6 +26,12 @@ y_sort_enabled = true
 tile_map_data = PackedByteArray("AAD+//z/AAADAAAAAAD+//3/AAADAAAAAAD+//7/AAADAAAAAAD+////AAADAAAAAAD//wAAAAADAAAAAAD/////AAADAAAAAAD+/wAAAAADAAAAAAD9////AAADAAAAAAD9//3/AAADAAAAAAD9//7/AAADAAAAAAD///7/AAADAAAAAAD+/wEAAAADAAAAAAD9/wAAAAADAAAAAAD9/wEAAAADAAAAAAA=")
 tile_set = ExtResource("1_r150o")
 
+[node name="StructureHover" type="TileMapLayer" parent="GridMap"]
+modulate = Color(0.262745, 0.356863, 0.815686, 0.584314)
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD+//z/AAADAAAAAAD+//3/AAADAAAAAAD+//7/AAADAAAAAAD+////AAADAAAAAAD//wAAAAADAAAAAAD/////AAADAAAAAAD+/wAAAAADAAAAAAD9////AAADAAAAAAD9//3/AAADAAAAAAD9//7/AAADAAAAAAD///7/AAADAAAAAAD+/wEAAAADAAAAAAD9/wAAAAADAAAAAAD9/wEAAAADAAAAAAA=")
+tile_set = ExtResource("1_r150o")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("2_idj7w")
 
