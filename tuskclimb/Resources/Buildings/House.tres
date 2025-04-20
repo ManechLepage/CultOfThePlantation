@@ -7,4 +7,5 @@
 script = ExtResource("1_1olsa")
 texture = ExtResource("2_k7luy")
 name = "House"
+sprites = Array[Vector2i]([Vector2i(2, 0), Vector2i(2, 1), Vector2i(2, 2), Vector2i(2, 3)])
 metadata/_custom_type_script = "uid://hnuewcfy260r"
