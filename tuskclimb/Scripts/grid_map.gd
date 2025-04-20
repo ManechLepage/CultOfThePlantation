@@ -25,7 +25,7 @@ func update_hover():
 		structure_hover.erase_cell(cell)
 	
 	if hovered:
-		structure_hover.set_cell(structure_hover.local_to_map(get_global_mouse_position()), 0, hovered.position)
+		structure_hover.set_cell(structure_hover.local_to_map(get_global_mouse_position()), 0, hovered.get_sprite())
 
 func place_building(placed_building: Building, pos: Vector2i) -> void:
 	for building in buildings:

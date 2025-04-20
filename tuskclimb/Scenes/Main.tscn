@@ -12,7 +12,7 @@
 [node name="Main" type="Node2D"]
 texture_filter = 1
 
-[node name="GridMap" type="Node2D" parent="."]
+[node name="GridMap" type="Node2D" parent="." groups=["GridManager"]]
 script = ExtResource("1_50glp")
 
 [node name="Ground" type="TileMapLayer" parent="GridMap"]

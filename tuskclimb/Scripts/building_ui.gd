@@ -11,3 +11,4 @@ func _ready() -> void:
 		get_child(0).add_child(building_instance)
 		building_instance.get_child(0).texture = building.texture
 		building_instance.get_child(1).text = building.name
+		building_instance.building = building
