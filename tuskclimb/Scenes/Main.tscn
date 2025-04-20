@@ -12,7 +12,7 @@
 [node name="Main" type="Node2D"]
 texture_filter = 1
 
-[node name="GridMap" type="Node2D" parent="."]
+[node name="GridMap" type="Node2D" parent="." groups=["GridManager"]]
 script = ExtResource("1_50glp")
 
 [node name="Ground" type="TileMapLayer" parent="GridMap"]
@@ -22,6 +22,12 @@ tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAAAAP7/AAAAAAAAAAD///3/AAAAAAA
 tile_set = ExtResource("1_r150o")
 
 [node name="Structures" type="TileMapLayer" parent="GridMap"]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD+//z/AAADAAAAAAD+//3/AAADAAAAAAD+//7/AAADAAAAAAD+////AAADAAAAAAD//wAAAAADAAAAAAD/////AAADAAAAAAD+/wAAAAADAAAAAAD9////AAADAAAAAAD9//3/AAADAAAAAAD9//7/AAADAAAAAAD///7/AAADAAAAAAD+/wEAAAADAAAAAAD9/wAAAAADAAAAAAD9/wEAAAADAAAAAAA=")
+tile_set = ExtResource("1_r150o")
+
+[node name="StructureHover" type="TileMapLayer" parent="GridMap"]
+modulate = Color(0.262745, 0.356863, 0.815686, 0.584314)
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAD+//z/AAADAAAAAAD+//3/AAADAAAAAAD+//7/AAADAAAAAAD+////AAADAAAAAAD//wAAAAADAAAAAAD/////AAADAAAAAAD+/wAAAAADAAAAAAD9////AAADAAAAAAD9//3/AAADAAAAAAD9//7/AAADAAAAAAD///7/AAADAAAAAAD+/wEAAAADAAAAAAD9/wAAAAADAAAAAAD9/wEAAAADAAAAAAA=")
 tile_set = ExtResource("1_r150o")
