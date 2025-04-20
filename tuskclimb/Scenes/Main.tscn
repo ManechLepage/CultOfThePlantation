@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bayog4bj46dj1" path="res://Scenes/building.tscn" id="4_rgh2o"]
 [ext_resource type="Script" uid="uid://hnuewcfy260r" path="res://Scripts/building.gd" id="6_jw32o"]
 [ext_resource type="Resource" uid="uid://npheydiasc4w" path="res://Resources/Buildings/House.tres" id="7_50glp"]
-[ext_resource type="Resource" uid="uid://cskjlgwkutoaj" path="res://Resources/Buildings/Grass.tres" id="8_vy5pj"]
+[ext_resource type="Resource" path="res://Resources/Buildings/Grass.tres" id="8_vy5pj"]
 
 [node name="Main" type="Node2D"]
 texture_filter = 1
