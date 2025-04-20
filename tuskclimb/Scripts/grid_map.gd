@@ -28,8 +28,8 @@ func update_hover():
 	
 	if hovered:
 		var pos: Vector2i = structure_hover.local_to_map(get_global_mouse_position())
-		if hovered == grass_tile:
-			pos = adjust_pos(pos)
+		#if hovered == grass_tile:
+			#pos = adjust_pos(pos)
 		structure_hover.set_cell(pos, 0, hovered.get_sprite())
 
 func handle_placing() -> void:
@@ -60,4 +60,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		handle_placing()
 
 func adjust_pos(pos: Vector2i) -> Vector2i:
-	return pos - Vector2i(0, 2)
+	if pos % 2 == 0:
+		pass
+	return pos + Vector2i(0, 0)
