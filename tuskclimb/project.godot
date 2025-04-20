@@ -31,7 +31,3 @@ folder_colors={
 "res://Scenes/": "green",
 "res://Scripts/": "teal"
 }
-
-[gui]
-
-theme/custom_font="uid://dqn3nogfnlg37"
