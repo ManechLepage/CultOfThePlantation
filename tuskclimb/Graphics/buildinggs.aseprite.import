@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv0ff6sb7a7pe"
-path="res://.godot/imported/uac.aseprite-4055af13509e3e9d449ee8af0a662d14.ctex"
+uid="uid://dyn6x08agccdh"
+path="res://.godot/imported/buildinggs.aseprite-b398e63e5947b88df77d4ba944b70cad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/uac.aseprite"
-dest_files=["res://.godot/imported/uac.aseprite-4055af13509e3e9d449ee8af0a662d14.ctex"]
+source_file="res://Graphics/buildinggs.aseprite"
+dest_files=["res://.godot/imported/buildinggs.aseprite-b398e63e5947b88df77d4ba944b70cad.ctex"]
 
 [params]
 

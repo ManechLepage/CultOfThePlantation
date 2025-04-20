@@ -47,6 +47,9 @@ func place_building(placed_building: Building, pos: Vector2i) -> void:
 		if building.position == pos:
 			return
 	
+	if hovered.only_grass and ground.get_cell_atlas_coords(pos) != grass_tile.get_sprite():
+		return
+	
 	hovered = null
 	
 	var building: Building = placed_building.duplicate(true)
@@ -60,6 +63,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		handle_placing()
 
 func adjust_pos(pos: Vector2i) -> Vector2i:
-	if pos % 2 == 0:
-		pass
-	return pos + Vector2i(0, 0)
+	if pos.x % 2 == 0:
+		return pos - Vector2i(0, 0)
+	return pos - Vector2i(0, 0)
