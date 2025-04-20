@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="Building" load_steps=2 format=3 uid="uid://npheydiasc4w"]
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://npheydiasc4w"]
 
 [ext_resource type="Script" uid="uid://hnuewcfy260r" path="res://Scripts/building.gd" id="1_1olsa"]
+[ext_resource type="Texture2D" uid="uid://wtuslw6wsa8q" path="res://Graphics/Building/house.aseprite" id="2_k7luy"]
 
 [resource]
 script = ExtResource("1_1olsa")
+texture = ExtResource("2_k7luy")
 name = "House"
 metadata/_custom_type_script = "uid://hnuewcfy260r"
