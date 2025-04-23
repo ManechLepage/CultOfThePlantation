@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://24cialeqah80"]
+
+[ext_resource type="Texture2D" uid="uid://ct7pc868033tt" path="res://Graphics/pixels.aseprite" id="1_rk7db"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2w5on"]
+particles_animation = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_erwvk"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, -1, 0)
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 358.19
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 0.0
+emission_ring_cone_angle = 28.33
+inherit_velocity_ratio = 0.301
+spread = 20.0
+radial_velocity_min = 82.01
+radial_velocity_max = 108.69
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -82.03
+radial_accel_max = -69.57
+scale_min = 0.2
+scale_max = 0.25
+anim_offset_max = 1.0
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_2w5on")
+amount = 2
+texture = ExtResource("1_rk7db")
+lifetime = 1.93
+collision_base_size = 0.0
+visibility_rect = Rect2(-100, -75, 200, 200)
+process_material = SubResource("ParticleProcessMaterial_erwvk")
